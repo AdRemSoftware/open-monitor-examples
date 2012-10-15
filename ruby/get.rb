@@ -9,7 +9,7 @@ data = {
 }
 
 begin
-    response = RestClient.get ENDPOINT + "/restj/ncrest/openmon/counter", params: data
+    response = RestClient.get ENDPOINT + "/ncintf/rest/1/openmon/counter", params: data
     puts "Response: #{response}"
 rescue RestClient::Exception => e
     puts "Error[#{e.http_code}]: #{e.response}"

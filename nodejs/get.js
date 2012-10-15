@@ -12,7 +12,7 @@ var data = {
 var options = {
     host: 'example.com',
     port: 80,
-    path: "/restj/ncrest/openmon/counter?"+querystring.stringify(data),
+    path: "/ncintf/rest/1/openmon/counter?"+querystring.stringify(data),
     method: "GET",
     headers: {'Content-Type': 'application/json; charset=utf-8'}
 };

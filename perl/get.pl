@@ -4,7 +4,7 @@ use warnings;
 use LWP::Simple;
 use URI;
 
-my $endpoint = "http://example.com/restj/ncrest/openmon/counter";
+my $endpoint = "http://example.com/ncintf/rest/1/openmon/counter";
 
 my %data = (
     "retain"=> 1,

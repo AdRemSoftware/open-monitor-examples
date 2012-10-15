@@ -1,1 +1,1 @@
-curl --get --data-urlencode "retain=1" --data-urlencode="apikey=MDAwMDAwMDAxM0FDRDhDQj==" --data-urlencode "crm/today-orders=123"  --data-urlencode "crm/today-emails=234" "http://example.com/restj/ncrest/openmon/counter"
+curl --get --data-urlencode "retain=1" --data-urlencode="apikey=MDAwMDAwMDAxM0FDRDhDQj==" --data-urlencode "crm/today-orders=123"  --data-urlencode "crm/today-emails=234" "http://example.com/ncintf/rest/1/openmon/counter"

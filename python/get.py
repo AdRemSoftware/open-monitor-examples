@@ -10,7 +10,7 @@ data = {
     "apikey": "MDAwMDAwMDAxM0FDRDhDQj=="
 }
 try:
-    url = ENDPOINT + "/restj/ncrest/openmon/counter?" + urllib.parse.urlencode(data)
+    url = ENDPOINT + "/ncintf/rest/1/openmon/counter?" + urllib.parse.urlencode(data)
     u = urllib.request.urlopen(url)
     print("Response: " + u.read().decode('utf-8'))
 except HTTPError as e:

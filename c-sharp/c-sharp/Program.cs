@@ -32,7 +32,7 @@ namespace c_sharp
                 query["apikey"] = "MDAwMDAwMDAxM0FDRDhDQj==";
                 try
                 {
-                    var response = await httpClient.GetStringAsync("/restj/ncrest/openmon/counter?" + query.ToString());
+                    var response = await httpClient.GetStringAsync("/ncintf/rest/1/openmon/counter?" + query.ToString());
                     Console.WriteLine(response);
                 }
                 catch (HttpRequestException e)
@@ -86,7 +86,7 @@ namespace c_sharp
                 {
                     var content = new StringContent(data.ToJsonObject().ToString());
                     content.Headers.ContentType = new System.Net.Http.Headers.MediaTypeHeaderValue("application/json"){ CharSet = "utf-8" };
-                    var response = await httpClient.PostAsync("/restj/ncrest/openmon/update", content);
+                    var response = await httpClient.PostAsync("/ncintf/rest/1/openmon/update", content);
                     Console.WriteLine(response);
                 }
                 catch (HttpRequestException e)
@@ -110,7 +110,7 @@ namespace c_sharp
             var postData =  Encoding.UTF8.GetBytes(data.ToJsonObject().ToString());
             try
             {
-                var request = WebRequest.Create(endpointAddress + "/restj/ncrest/openmon/update");
+                var request = WebRequest.Create(endpointAddress + "/ncintf/rest/1/openmon/update");
                 request.Method = "POST";
                 request.ContentType = "application/json; charset=utf-8";
                 

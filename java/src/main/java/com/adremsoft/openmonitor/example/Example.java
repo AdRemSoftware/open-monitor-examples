@@ -29,7 +29,7 @@ public class Example {
         uri.setScheme("http")
                 .setHost("example.com")
                 .setPort(80)
-                .setPath("/restj/ncrest/openmon/counter")
+                .setPath("/ncintf/rest/1/openmon/counter")
                 .setParameter("retain", "1")
                 .setParameter("PBX/line status.0", "1")
                 .setParameter("PBX/line status.1", "0")
@@ -51,7 +51,7 @@ public class Example {
     }
 
     public static void jsonRequest() throws URISyntaxException, IOException {
-        HttpPost httpPost = new HttpPost("http://example.com/restj/ncrest/openmon/update");
+        HttpPost httpPost = new HttpPost("http://example.com/ncintf/rest/1/openmon/update");
         Gson gson = new Gson();
 
         RequestData data = new RequestData();

@@ -4,7 +4,7 @@ use warnings;
 use LWP::Simple;
 use JSON;
 
-my $endpoint = "http://example.com/restj/ncrest/openmon/update";
+my $endpoint = "http://example.com/ncintf/rest/1/openmon/update";
 	
 my $data = {
     "retain" => 1,

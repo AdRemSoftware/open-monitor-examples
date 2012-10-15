@@ -13,7 +13,7 @@ var data = {
 var options = {
     host: 'example.com',
     port: 80,
-    path: "/restj/ncrest/openmon/update",
+    path: "/ncintf/rest/1/openmon/update",
     method: "POST",
     headers: {'Content-Type': 'application/json; charset=utf-8'}
 };

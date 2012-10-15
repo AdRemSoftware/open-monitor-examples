@@ -8,7 +8,7 @@ $data = Array(
     "PBX/version" => "Mock Phone System 1.0",
     "apikey" => "MDAwMDAwMDAxM0FDRDhDQj=="
 );
-$curl = curl_init($endpoint."/restj/ncrest/openmon/counter?".http_build_query($data)); 
+$curl = curl_init($endpoint."/ncintf/rest/1/openmon/?".http_build_query($data)); 
 curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
 $result = curl_exec($curl); 
 

@@ -6,11 +6,11 @@ To access API all you need to access your server web access port with given URL.
 
 ### Simple Update Counter (URL form)
     
-	http://example.com/restj/ncrest/openmon/counter?crm%2Fday-orders=121&crm%2Ftoday-emails=234&retain=1&apikey=MDAwMDAwMDAxM0FDRDhDQj==
+	http://example.com/ncintf/rest/1/openmon/counter?crm%2Fday-orders=121&crm%2Ftoday-emails=234&retain=1&apikey=MDAwMDAwMDAxM0FDRDhDQj==
 
 ### Update Counters (POST) with JSON data
 
-You need send POST request to `http://example.com/restj/ncrest/openmon/update` with JSON content.
+You need send POST request to `http://example.com/ncintf/rest/1/openmon/update` with JSON content.
 
 #### Example JSON content
 	

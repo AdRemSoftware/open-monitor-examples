@@ -14,7 +14,7 @@ data = {
 }
 
 try:
-    url = ENDPOINT + "/restj/ncrest/openmon/update"
+    url = ENDPOINT + "/ncintf/rest/1/openmon/update"
     opener = urllib.request.build_opener()
     opener.addHeaders = [('Content-Type', 'application/json; charset=utf-8')]
     u = opener.open(url, json.dumps(data).encode('utf-8'))

@@ -11,7 +11,7 @@ $data = Array(
     "apikey" => "MDAwMDAwMDAxM0FDRDhDQj=="
 
 );
-$curl = curl_init($endpoint."/restj/ncrest/openmon/update"); 
+$curl = curl_init($endpoint."/ncintf/rest/1/openmon/update"); 
 
 $options = array(
 	CURLOPT_POST => true, 

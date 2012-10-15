@@ -14,7 +14,7 @@ data = {
 
 }
 begin
-    response = RestClient.post ENDPOINT + "/restj/ncrest/openmon/update", data.to_json, :content_type => :json
+    response = RestClient.post ENDPOINT + "/ncintf/rest/1/openmon/update", data.to_json, :content_type => :json
     puts "Response: #{response}"
 rescue RestClient::Exception => e
     puts "Error[#{e.http_code}]: #{e.response}"
