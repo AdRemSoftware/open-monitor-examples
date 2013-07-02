@@ -25,3 +25,12 @@ You need send POST request to `http://example.com/ncintf/rest/1/openmon/update` 
     }
  
 Remember to set `Content-Type` header to `application/json`. As you see you can add any data as counter but only numeric counters can be used in threshold events and trends. Other values can be seen in Node Status page.
+
+##CSV format
+	object,counter,instance,value
+First line is a header (ignored). Each next line is a counter.
+
+Example:
+	object,counter,instance,value
+	processor,% Utilization,_total,20
+	memory,private bytes,,23523578
