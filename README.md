@@ -31,6 +31,7 @@ Remember to set `Content-Type` header to `application/json`. As you see you can 
 First line is a header (ignored). Each next line is a counter.
 
 Example:
+
 	object,counter,instance,value
 	processor,% Utilization,_total,20
 	memory,private bytes,,23523578
